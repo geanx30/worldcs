@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="./js/scripts.js"></script>
+    <title>WorldCS - Counter Strike</title>
+</head>
+
+<body style="background-image: url('./imgs/bgcs.jpg');">
+    <header>
+        <div class="container">
+            <nav>
+                <a class="logo" href="./index.html"><img src="./imgs/logocs2.png" alt="logo"></a>
+                <ul class="menu">
+                    <a href="./index.html">INICIO</a>
+                    <a href="./noticias.html">NOTICIAS</a>
+                    <a href="./contato.html">CONTATO</a>
+                    <a class="jvivo-btn" href="./index.html#jvivo">JOGOS AO-VIVO</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <img class="close-icon" src="./imgs/closeicon.png" alt="closemenu"
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="abreMenu()">
+                    <img src="./imgs/menumb.png" alt="menu">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="noticiasbanner">
+        <div class="container">
+            <div class="noticiatxt">
+                <h1>Pagina de contato</h1>
+                <div class="contatos">
+                    <a href="https://www.linkedin.com/in/gean-martins/">LINKEDIN </a>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                    <br>
+                    <br>
+                    <a href="https://github.com/geanx30">GITHUB </a>
+                    <img width="48" height="48" src="https://img.icons8.com/office/40/github.png" alt="github"/>
+                    <br>
+                    <br>
+                    <h2>E-MAIL</h2>
+                    <form class="form" action="https://formsubmit.co/gcmmrf@gmail.com" method="POST">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" placeholder="Escreva aqui"></textarea>
+                        <input type="hidden" name="_next" value="https://worldcs.netlify.app/thanks.html">
+                        <button type="submit">Send</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
